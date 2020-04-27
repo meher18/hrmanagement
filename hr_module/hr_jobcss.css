@@ -1,0 +1,239 @@
+.body{
+
+    padding:0px;
+
+    background-color: #5D6D7E ;
+    background-repeat: no-repeat;
+
+}
+
+.navbar{
+    height: 70vh;
+    background-color: #FFCC33;
+    background-image: url(admin.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    background-position: -400px;
+    box-shadow: 2px -2px 30px 10px black;
+
+
+
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+
+}
+
+ul{
+
+    margin: 20px;
+    border-radius: 10px;
+    background-color:#000066  ;
+    width: 40vh;
+    float: right;
+    display:flex;
+    box-shadow: 2px -2px 30px 10px black;
+    height: 50vh;
+    justify-content: space-around;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+
+
+    padding: 30px;
+
+
+
+}
+
+
+
+
+.links , li a{
+    margin-top: 30px;
+    text-decoration: none;
+    list-style: none;    
+    font-family: sans-serif;
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+
+}
+li a{
+    padding: 20px;
+}
+.links ul li a:hover{
+    background-color: #FFCC33;
+    border-radius: 10px;
+    color:  #000066;
+    border-bottom: 5px dashed black ; 
+    border-top: 5px dashed black ; 
+    border: 2px solid  #FFCC33;
+
+
+}
+
+.container{
+    height: 30vh;
+    margin-top: 0px;
+    text-align: center;
+    display: flex;
+    color:#CCD1D1;
+    justify-content: center;
+    box-shadow: 2px -2px 30px 10px black;
+    align-items: center;
+ 
+    background-position: 0;
+    background-color:#000066;
+    margin: 0px 200px 0px 200px ;
+
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    text-transform: uppercase;
+
+}
+.container-1{
+    height: 50vh;
+    display: flex;
+    box-shadow: 2px -2px 25px 5px black;
+
+    overflow: hidden;
+    flex-flow: nowrap;
+    text-align: center;
+    border: 1px solid white;
+    align-items: center;
+    justify-content: center;
+    width: 90vh;
+    left: 10%;
+    top: 15%;
+ 
+    border-radius: 10px;
+    padding: 0%;
+    position: relative;
+    border: none;
+
+}
+.x{
+       height:inherit;
+    width: 90vh;
+    background-color: rgba(0,0,102,0.5);
+    text-align: center;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    color: #ffcc33;
+    left:0%;
+   
+    position: absolute;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-transform: uppercase; 
+    line-height: 2rem;
+    letter-spacing: 0.1rem;
+    font-family: sans-serif;
+   
+}
+.a{
+    height:inherit;
+    width: 90vh;
+    background-color:white;
+    text-align: center;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    color: #000066;
+    left:100%;
+    position: absolute;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-transform: uppercase; 
+    line-height: 2rem;
+    letter-spacing: 0.1rem;
+    font-family: sans-serif;
+    
+
+}
+.a P{
+    width:50vh;
+}
+.b{
+     letter-spacing: 0.1rem;
+    font-family: sans-serif;
+ height:inherit;
+    width: 90vh;
+      background-color:white;
+      text-align: center;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    color: #000066;
+     line-height: 2rem;
+left:100%;
+    position: absolute;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-transform: uppercase; 
+}
+.b P{
+    width:50vh;
+}
+.c{
+     line-height: 2rem;
+    height:inherit;
+    width: 90vh;
+     background-color:white;
+     text-align: center;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    color: #000066;
+left:100%;
+    position: absolute;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+     letter-spacing: 0.1rem;
+    font-family: sans-serif;
+}
+.c P{
+    width:50vh;
+}
+.d{
+ line-height: 2rem;
+left:100%;
+    position: absolute;
+    height:inherit;
+    width: 90vh;
+     background-color:white;
+    text-align: center;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    color: #000066;
+
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+     letter-spacing: 0.1rem;
+    font-family: sans-serif;
+
+}
+.d P{
+    width:50vh;
+}

@@ -1,0 +1,20 @@
+.number{
+font-size: 50px;
+}
+.numbers{
+     top:25%;
+    left:35%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    align-content: center;
+    
+}
+body{
+    background-color: #F5B7B1;
+    color:#FDFEFE ;
+}

@@ -1,0 +1,51 @@
+.body{
+    display:border-box;
+    padding:0px;
+
+
+
+    background-repeat: no-repeat;
+    margin:0px;
+}
+
+.navbar{
+    height: 20vh;
+    background-color: black;
+
+
+
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+
+
+
+}
+.navbar ul{
+    display:flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+
+
+
+}
+
+
+
+
+.links ul li a{
+    text-decoration: none;
+    list-style: none;    
+    font-family: sans-serif;
+    color:white;
+    font-weight: bold;
+    padding:20px;
+
+}
+.links ul li a:hover{
+    background-color: white;
+    color:black;
+
+}
+

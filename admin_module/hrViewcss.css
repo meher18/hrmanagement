@@ -1,0 +1,28 @@
+.hr-container{
+   margin-bottom: 40px;
+}
+.hr-body{
+   
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-around;  
+    align-content: center;
+    align-items: center;
+    
+}
+.hr{
+     padding: 0px 40px;
+    border:2px solid black;
+    height:80vh;
+    width:50vh;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-content:center;
+    align-items:center;
+}
+.hr-container button{
+    margin-left:40%;
+}

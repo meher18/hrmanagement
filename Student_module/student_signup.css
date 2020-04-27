@@ -1,0 +1,69 @@
+body{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+form{
+    padding: 30px;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+
+
+    border:5px solid;
+    border-radius: 20px;
+
+
+}
+form .firstname ,.lastname,.password ,.email,.coll_name,.date{
+    width:400px;
+    height:50px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    border:2px solid black;
+    text-decoration: none;
+    padding: 10px;
+    text-decoration-style: none;
+
+
+
+}
+form .password:hover{
+    border:2px solid blue;
+
+}
+form .user_name:hover{
+    border:2px solid yellow;
+
+}
+form .email:hover{
+    border:2px solid aqua;
+
+}
+.fourth {
+    border-color: blue;
+    color: #fff;
+    background-image: linear-gradient(45deg, lightgreen 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+    padding: 20px;
+    color: black;
+    border-radius: 10px;
+
+    border-style: none;
+}
+.fourth:hover {
+    background-position: 0;
+}
+.radio{
+    width: 40px;
+}
+
+

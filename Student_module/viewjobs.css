@@ -1,0 +1,257 @@
+
+body{
+    
+    
+margin:0px;    
+    
+}
+.job-body {
+    
+    width:200vh;
+    margin: 0px;
+    position:relative;
+    left:0%;
+    padding: 100px 10px 0px 10px ;
+    display: flex;
+    flex-direction: row;
+ 
+    flex-wrap: wrap;
+   justify-content:space-around;
+    background-color:  #5D6D7E  ;
+
+}
+.job {
+    padding: 0px 40px;
+ 
+    height: 80vh;
+    width: 80vh;
+    overflow: auto;
+    display: flex;
+    color:black;
+    background-color: #85929E ;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 10px;
+    text-transform: uppercase;
+
+}
+.job-container {
+
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+    box-shadow: 5px -5px 40px 10px black;
+    background-color: black;
+    border-radius: 10px;
+
+}
+.skills {
+    display: flex;
+    width: 30vh;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.button {
+    border-color: #f1c40f;
+    padding: 20px;
+    text-decoration: none;
+
+
+    background-image: linear-gradient(45deg, #4D247B  50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: background 3000ms ease-in-out; 
+    transition:  background 300ms ease-in-out;
+    color: black;
+    padding:20px;
+    margin: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #5DADE2 ;
+    outline: none;
+    border-style:  none;
+
+}
+.button:active{
+
+    transform: scale(0.95);
+
+}
+
+
+
+
+
+
+
+.button:hover {
+    background-position: 0;
+    color: white;
+}
+.heading {
+    background-color: #5D6D7E ;
+    display:flex;
+    height: 40vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content:center;
+    align-items:center;
+    text-align: center;
+    padding-bottom: 40px;
+    color:#34495E ;
+
+    font-family: 'Cinzel', serif;
+
+
+}
+.heading h1{
+    color:#EAECEE; 
+    font-weight: 200;
+    font-family: 'Nosifer', cursive;
+
+}
+.logout {
+    height: 15vh;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items:center;
+
+    font-size: 40px;
+
+    font-family: 'Raleway', sans-serif;
+
+
+}
+.logout a{
+    color :#5DADE2 ;
+    border:  2px solid #5DADE2 ;
+    text-decoration: none;
+    padding: 10px;
+
+}
+.job {
+
+}
+.logout a:hover{
+    border:  2px dotted #5DADE2 ;
+}
+.navbar{
+    min-height: 100vh;
+    width: 50vh;
+    background-color: bisque;
+}
+.container{
+
+  
+  height: inherit;
+
+}
+.container1{
+   
+    overflow:hidden;
+    position: absolute;
+    width:201vh;
+    left:0;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+    background-color: red;
+   
+    align-content: center;
+    border:2px solid black;
+}
+.resume-container{
+    display: flex;
+  width: 150vh;
+    flex-direction: column;
+    margin-bottom: 40px;
+    box-shadow: 5px -5px 40px 10px black;
+    background-color: white;
+    border-radius: 10px;
+    padding:40px;
+    
+}
+.resume {
+    
+    padding: 0px 40px;
+   border: 2px solid white;
+    height: inherit;
+    width: available;
+    overflow: auto;
+    display: flex;
+    color:#FDFEFE;
+    background-image: linear-gradient(to right ,#EC388D ,#FB1857);
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: flex-start;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 10px;
+    text-transform: uppercase;
+
+}
+.resume .abcd{
+   
+    border: 2px solid white;
+    height: 50vh;
+    width:40vh;
+    display: flex;
+    text-align: center;
+    flex-direction: column
+        
+   
+}
+.resume .abcde{
+     position: absolute;
+    right: 25%;
+}
+.resume .abcd button{
+    padding: 20px;
+    background-color: white;
+    color:#EC388D;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    
+}
+.resume .abcd button:active{
+    transform: scale(0.92);
+}
+.resume .abcd P{
+    font-family: cursive;
+    line-height: 2rem;
+    letter-spacing: 0.1rem;
+    margin: 10px;
+}
+
+.resume-body{
+
+    width:200vh;
+    position: absolute;
+    margin: 0px;
+    left:100%;
+    padding: 100px 10px 0px 10px ;
+    display: flex;
+    flex-direction: column;
+align-items: center;
+align-content: center;
+     justify-content: space-around;
+    background-color:#FFEDF2 ;
+
+
+}

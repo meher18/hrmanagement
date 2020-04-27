@@ -1,0 +1,114 @@
+<html>
+  <head>
+    <title>add jobs</title>
+    <link rel="stylesheet" href="addjobcss.css" />
+    <script>
+      var string = "";
+      var string2 = "";
+      function addSkill() {
+        var a = document.getElementById("skill_input").value;
+        var skills = document.getElementById("skills");
+
+        if (string == "") {
+          b = document.createTextNode = a;
+        } else {
+          b = document.createTextNode = "," + a;
+        }
+        string += b;
+        //string2+=b;
+
+        skills.value = string;
+      }
+      function removeSkill() {
+        d = string.lastIndexOf(",");
+        var skills = document.getElementById("skills");
+        e = createTextNode = string.substring(0, d);
+        //  if(string.indexOf(',')==string.length)
+        //  {
+        //    e=document.createTextNode=string.substring(0,d);
+        //  }
+        //  else{
+        //   var g=string.substring(0,d);
+        //       var l=g.lastIndexOf(',');
+        //       e=document.createTextNode=string.substring(0,l);
+        //  }
+        skills.value = e;
+        // string2=e;
+        string = e;
+
+        skills.value = e;
+      }
+      function returna() {
+        return string;
+      }
+    </script>
+  </head>
+  <body>
+    <form class="form-container" action="" method="GET">
+      <div class="form_1">
+        <div class="form-1">
+         <input type="text" name="job_name" placeholder="JOB NAME " />
+          <input type="text" name="company_name" placeholder="COMPANY NAME " />
+          <label for="location">ENTER THE ADDRESS</label>
+          <textarea
+            type="text"
+            name="location"
+            placeholder="Enter Address "
+            cols="40"
+            rows="5"
+           
+          ></textarea>
+          <label for="details">ENTER THE JOB DETAILS</label>
+          <textarea name="details" cols="50" rows="10"></textarea>
+        </div>
+      </div>
+      <div class="form-2-container">
+        <div class="form-2">
+          <div class="skill_container">
+            <input
+              id="skill_input"
+              type="text"
+              name="skills"
+              placeholder="PLEASE ADD  SKILL HERE"
+              required
+            /><button type="button" id="add_skill" onclick="addSkill()">
+              Add Skill 
+            </button>
+
+            <button type="button" id="remove_skill" onclick="removeSkill()">
+              Remove Skill
+            </button>
+            <textarea
+              id="skills"
+              name="skillnames"
+              aria-valuetext="returna()"
+              readonly
+              cols="50"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="a">
+            enter the experience required :
+            <input
+              type="text"
+              name="experience"
+              placeholder=" EXPERIENCE REQUIRED FOR THE JOB"
+            />
+            enter the salary :
+
+            <input
+              type="text"
+              name="salary"
+              placeholder="SALARY  "
+            />
+          </div>
+        </div>
+      </div>
+      
+      <div class="submit">
+
+        <button type="submit" class="submit-btn">ADD JOB</button>
+      </div>
+    </form>
+  </body>
+</html>

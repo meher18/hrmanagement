@@ -1,0 +1,223 @@
+.form-container{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #34495E ;
+    color: #ECF0F1;
+
+}
+.form_1_1{
+
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+}
+.form-1{
+    display: flex;
+    width: 80vh;
+    font-family: sans-serif;
+    justify-content: space-around;
+    align-content: center;
+    align-items:center;
+    flex-direction: column;
+    color: black;
+    padding: 50px;
+    background-color:#D6EAF8  ;
+    box-shadow: 2px 2px 40px 10px black;
+    height: 80vh;
+    border-radius: 30px;
+
+
+}
+.form-2{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items:center;
+    flex-direction: row;
+    color: #ECF0F1;
+    height: 80vh;
+    background-color: black;
+    border-radius: 30px;
+    margin:30px;
+    box-shadow: 2px 2px 40px 10px black;
+
+
+}
+.form-2-container{
+    display: flex;
+    width:190vh;
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items:center;
+
+
+
+}
+.name,.address,.date,.email,.phone,.college{
+    padding: 20px;
+    width: 40vh;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+
+}
+.address{
+    background-color: white;
+
+}
+input{
+    border:2px dotted black;
+}
+.qualifications{
+
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    padding: 50px;
+    color: white;
+    background-color: #AEB6BF  ;
+
+    border-radius: 20px;
+    margin: 40px;
+    box-shadow: 2px 2px 40px 10px black;
+
+
+}
+.qualifications textarea{
+    font-size: 20px;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+
+.hobbies_contianer{
+    height: 60vh;
+    background-color: #D6EAF8  ;
+    padding: 50px;
+}
+.skill_container{
+    height: 60vh;
+    background-color: #AEB6BF ;
+    padding: 50px;
+}
+#remove_hobby{
+    outline: none;
+
+    background-color: tomato;
+    border: none;
+    padding: 20px;
+    position: relative;
+    margin: 20px;
+    border-radius:10px;
+}
+#add_hobby{
+    background-color:#f1c40f ;
+    border: none;
+    padding: 20px;
+    outline: none;
+
+    position: relative;
+    margin: 20px;
+    border-radius:10px;
+}
+#remove_skill{
+    background-color:tomato ;
+    border: none;
+    padding: 20px;
+    margin: 20px;
+    border-radius:10px;
+    outline: none;
+
+}
+#add_skill{
+    background-color: #f1c40f;
+    border: none;
+    padding: 20px;
+    position: relative;
+    margin: 20px;
+    border-radius:10px;
+    outline: none;
+
+}
+#skill_input{
+    padding:20px;
+    outline: none;
+    border: none;
+    border-radius:10px;
+    margin-left:15px;
+
+}
+#hobby_input{
+    padding:20px;
+    outline: none;
+    border: none;
+    border-radius:10px;
+    margin-left:10px;
+}
+#skills{
+    margin-left:20px;
+    outline: none;
+    border-radius:10px;
+    font-size: 20px;
+    margin-top: 40px;
+}
+#hobbies{
+    margin-left:10px;
+    outline: none;
+    border-radius:10px;
+    font-size: 20px;
+    margin-top: 55px;
+
+}
+.jobposition{
+    padding:50px;
+    font-size: 20px;
+
+    box-shadow: 2px 2px 80px 10px black;
+
+}
+.jobposition input{
+    padding: 20px;
+    width: 40vh;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    border:2px solid black;
+
+}
+.submit-btn{
+    border-color: #f1c40f;
+    padding: 20px;
+    text-decoration: none;
+
+
+    background-image: linear-gradient(45deg, lime 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+
+    transition:  background 300ms ease-in-out;
+    color: black;
+    padding:40px;
+    margin: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: aquamarine ;
+    outline: none;
+    border-style:  none;
+
+}
+.submit-btn:hover{
+
+    background-position: 0;
+}
