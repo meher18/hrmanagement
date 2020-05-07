@@ -1,6 +1,15 @@
 <html>
     <head>
         <link href="hrViewcss.css" rel="stylesheet">
+       <!--         for the material css -->
+
+<!--         Compiled and minified CSS -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+         <!--for the material icons-->
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--         Compiled and minified JavaScript -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+         
     </head>
     <body>
         <?php
@@ -20,20 +29,20 @@
             <?php while ($row = mysqli_fetch_array($exec)) { ?>
 
                 <div class="hr-container">
-                    <div class="hr">
+                    <div class="hr card">
 
-                        <h1 class="hrname">HR :<?php echo $row[1]; ?></h1></br>
-                        <h2 class="email">Email:<?php echo $row[2]; ?></h2></br>
-                        <h2 class="dob">DOB:<?php echo $row[3]; ?></h2></br>
-                        <h2 class="phone">phone:<?php echo $row[4]; ?></h2></br>
-                        <h2 class="password">password:<?php echo $row[5]; ?></h2></br>
+                        <h4 class="hrname">HR :<?php echo $row[1]; ?></h4></br>
+                        <h5 class="email">Email:<?php echo $row[2]; ?></h5></br>
+                        <h5 class="dob">DOB:<?php echo $row[3]; ?></h5></br>
+                        <h5 class="phone">phone:<?php echo $row[4]; ?></h5></br>
+                        <h5 class="password">password:<?php echo $row[5]; ?></h5></br>
 
 
 
 
                     </div>
                     <form action="viewHR.php">
-                           <button name="hrdelete" value="<?php echo $row[0] ;?>">Delete HR</button>
+                           <button class="btn waves-effect red center" name="hrdelete" value="<?php echo $row[0] ;?>">Delete HR</button>
                     </form>
                 </div>
 

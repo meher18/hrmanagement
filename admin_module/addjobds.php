@@ -1,15 +1,33 @@
 <html>
     <head>
         <title>add jobs</title>
+
+        <!--         for the material css -->
+
+        <!--         Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+        <!--for the material icons-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--         Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+
+
         <link rel="stylesheet" href="addjobcss.css" />
-         <script>
-        onload(function onloa(){
-                document.getElementsByTagName("form").onsubmit="false";
-            });
-    </script>
+
+
+
+
+
+
         <script>
-            
-            
+            onload(function onloa() {
+                document.getElementsByTagName("form").onsubmit = "false";
+            });
+          
+        </script>
+        <script>
+
+
             var string = "";
             var string2 = "";
             function addSkill() {
@@ -25,7 +43,7 @@
                 //string2+=b;
 
                 skills.value = string;
-                                var a = document.getElementById("skill_input").value=null;
+                var a = document.getElementById("skill_input").value = null;
 
             }
             function removeSkill() {
@@ -55,30 +73,28 @@
     <body>
         <form class="form-container" action="addjobds.php" method="POST" >
             <div class="form_1">
-              
+
                 <div class="form-1">
-      <?php
-                 session_start();
-   $adminname= $_SESSION['username'];
-      $connect = mysqli_connect("localhost", "root", "", "admin")or die(mysqli_error($connect));
+                    <?php
+                    session_start();
+                    $adminname = $_SESSION['username'];
+                    $connect = mysqli_connect("localhost", "root", "", "admin")or die(mysqli_error($connect));
 
 
-     
-          if (isset($_POST['on'])) {
-   
-       $query1="select jobid from jobs  order by jobid desc";
-          $exec1= mysqli_query($connect,$query1 );
-         $row= mysqli_fetch_array($exec1);
-         echo "job id:".($row['jobid']+1);
-          }
-          else{
-                 $query1="select jobid from jobs  order by jobid desc";
-          $exec1= mysqli_query($connect,$query1 );
-         $row= mysqli_fetch_array($exec1);
-        echo "job id:". ($row['jobid']+1);
-          }
-  
-?>
+
+                    if (isset($_POST['on'])) {
+
+                        $query1 = "select jobid from jobs  order by jobid desc";
+                        $exec1 = mysqli_query($connect, $query1);
+                        $row = mysqli_fetch_array($exec1);
+                        echo "job id:" . ($row['jobid'] + 1);
+                    } else {
+                        $query1 = "select jobid from jobs  order by jobid desc";
+                        $exec1 = mysqli_query($connect, $query1);
+                        $row = mysqli_fetch_array($exec1);
+                        echo "job id:" . ($row['jobid'] + 1);
+                    }
+                    ?>
                     <input type="text" name="job_name" placeholder="JOB NAME " required="true"/>
                     <input type="text" name="company_name" placeholder="COMPANY NAME " required="true"/>
                     <input type="text" name="location" placeholder="Enter Address " required="true"/>
@@ -94,12 +110,12 @@
                             type="text"
                             name="skills"
                             placeholder="PLEASE ADD  SKILL HERE"
-                           
-                            /><button type="button" id="add_skill" onclick="addSkill()">
+
+                            /><button class="waves-effect" type="button" id="add_skill" onclick="addSkill()">
                             Add Skill here
                         </button>
 
-                        <button type="button" id="remove_skill" onclick="removeSkill()">
+                        <button class="waves-effect" type="button" id="remove_skill" onclick="removeSkill()">
                             Remove Skill 
                         </button>
                         <textarea id="skills" name="skillnames" aria-valuetext="returna()"  readonly cols="50" rows="10"   required="true" ></textarea>
@@ -125,44 +141,38 @@
                 </div>
             </div>
             <div class="submit">
-
-                <button type="submit" class="submit-btn" name="on" value="off"  >ADD JOB</button>
+                <button  class="waves-effect btn btn-large" type="submit" class="submit-btn" name="on" value="off"  >ADD JOB</button>
             </div>
         </form>
 
-     
+
         <div>
             <a href="viewJobs.php">View Jobs</a>
         </div>
     </body>
-     <?php
- if (isset($_POST['on'])) {
-          
+<?php
+if (isset($_POST['on'])) {
 
-      
-        
-            $jobname = mysqli_real_escape_string($connect,$_POST['job_name']);
-            $companyname = mysqli_real_escape_string($connect,$_POST['company_name']);
-            $location =mysqli_real_escape_string($connect, $_POST['location']);
-            $jobdetails = mysqli_real_escape_string($connect,$_POST['details']);
-            $experience=mysqli_real_escape_string($connect,$_POST['experience']);
-            $salary=mysqli_real_escape_string($connect,$_POST['salary']);
-         
-            $skills =mysqli_real_escape_string($connect,$_POST['skillnames']);
-        
-              $query = "insert into jobs(jobname,company,address,jobdetails,skills,experience,salary,adminname) values('$jobname','$companyname','$location','$jobdetails','$skills','$experience','$salary','$adminname') ";
-              $exec= mysqli_query($connect, $query) or die(mysqli_error($connect)) ;
-              if($exec)
-              {
-                 echo "inserted"; 
-              }
-              else{
-                  echo "sorry there was a problem unable to insert";
-              }
-          
-         
-          
+
+
+
+    $jobname = mysqli_real_escape_string($connect, $_POST['job_name']);
+    $companyname = mysqli_real_escape_string($connect, $_POST['company_name']);
+    $location = mysqli_real_escape_string($connect, $_POST['location']);
+    $jobdetails = mysqli_real_escape_string($connect, $_POST['details']);
+    $experience = mysqli_real_escape_string($connect, $_POST['experience']);
+    $salary = mysqli_real_escape_string($connect, $_POST['salary']);
+
+    $skills = mysqli_real_escape_string($connect, $_POST['skillnames']);
+
+    $query = "insert into jobs(jobname,company,address,jobdetails,skills,experience,salary,adminname) values('$jobname','$companyname','$location','$jobdetails','$skills','$experience','$salary','$adminname') ";
+    $exec = mysqli_query($connect, $query) or die(mysqli_error($connect));
+    if ($exec) {
+        echo "inserted";
+    } else {
+        echo "sorry there was a problem unable to insert";
+    }
 }
 ?>
-      
+
 </html>

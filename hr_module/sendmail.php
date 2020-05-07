@@ -16,7 +16,7 @@ $studentid=$_GET['resumeid'];
            $exec2 = mysqli_query($connect, $resumequery) or die(mysqli_error($connect));
            $row2=mysqli_fetch_array($exec2);
           
-            echo $row2['email'];
+            echo "mail will be sent to this email :".$row2['email'];
            
            
 

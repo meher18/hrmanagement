@@ -9,6 +9,7 @@
 
 }
 .form-1{
+    padding: 40px;
     border: 1px solid black;
     box-shadow: 5px 5px 25px 15px black;
     display: flex;
@@ -42,10 +43,10 @@
 
 }
 body{
-    background-color:deepskyblue;
+
 }
 .form-2{
-
+    padding: 40px;
     box-shadow: 5px 5px 25px 15px black;
     display: flex; 
     align-content: center;

@@ -4,6 +4,14 @@
             Admin Sign Up Page
         </title>
         <link href="ADDHRCss.css" rel="stylesheet">
+           <!--         for the material css -->
+
+        <!--         Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+        <!--for the material icons-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--         Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
         <script>
             function validate()
             {
@@ -25,7 +33,10 @@
 
 
         <div class="form" >
+         
             <form  action="ADDHr.php" method="POST" >
+                <i class="material-icons large">person</i> 
+                   <h3>ADMIN ADD NEW HR </h3>
                 <input type="text" class="hr_name" placeholder="PLEASE ENTER YOUR USER NAME" name="hr_name"required>
                 <input type="email" class="email" placeholder="PLEASE ENTER YOUR EMAIL ID" name="email" required>
                 <input type="date" class="dob" placeholder="PLEASE ENTER YOUR D.O.B" name="dob" id="dob" required="true">

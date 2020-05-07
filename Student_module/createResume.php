@@ -27,11 +27,28 @@ $row = mysqli_fetch_array($exec1);
     <head>
         <title>add jobs</title>
         <link rel="stylesheet" href="createResumecss.css" />
+         <script src="../js/jquery.js" >
+        
+        
+        
+        </script>
+        
+        <!--         for the material css -->
+
+<!--         Compiled and minified CSS -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+         <!--for the material icons-->
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--         Compiled and minified JavaScript -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
         <script>
             onload(function onloa() {
                 document.getElementsByTagName("form").onsubmit = "false";
             });
         </script>
+
+
+
         <script>
 
 
@@ -130,10 +147,17 @@ $row = mysqli_fetch_array($exec1);
             function returna1() {
                 return string1;
             }
+
+
+
+
+            $(document).ready(function(){
+                $('.datepicker').datepicker();
+            })
         </script>
     </head>
     <body>
-        <form class="form-container" action="resumecreated.php" method="POST" >
+        <form class="form-container " action="resumecreated.php" method="POST" >
             <div class="form_1_1">
 
                 <div class="form-1">
@@ -141,14 +165,15 @@ $row = mysqli_fetch_array($exec1);
                     <input  class="name" type="text" name="studentname" placeholder="student name" required="true"/>
 
 
-                    <div class="gender">
+                    <div class="gender ">
                         select your gender :
-                        <input type="radio" name="gender" value="male" >MALE
-                        <input type="radio" name="gender" value="female">FEMALE
+                       <p><label > <input type="radio" name="gender" value="male"><span>MALE</span></label></p>
+                       <p><label > <input type="radio" name="gender" value="female"><span>FEMALE</span></label></p>
+                        
 
                     </div>
 
-                    <input class="date" type="date" name="dob" placeholder="Date of birth" required="true"/>
+                    <input class="datepicker" type="text" name="dob" placeholder="Date of birth" required="true"/>
                     <input class="email" type="email" name="email" placeholder="Enter your email" required="true"/>
                     <input class="phone" type="text" name="phone" placeholder="Phone number" required="true"/>
                     Enter your address
@@ -181,11 +206,11 @@ $row = mysqli_fetch_array($exec1);
                             name="skills"
                             placeholder="PLEASE ADD  SKILL HERE"
 
-                            /><button type="button" id="add_skill" onclick="addSkill()">
+                            /><button class="waves-effect" type="button" id="add_skill" onclick="addSkill()">
                             Add Skill here
                         </button>
 
-                        <button type="button" id="remove_skill" onclick="removeSkill()">
+                        <button class="waves-effect" type="button" id="remove_skill" onclick="removeSkill()">
                             Remove Skill 
                         </button>
                         <div style="color:white">
@@ -198,16 +223,17 @@ $row = mysqli_fetch_array($exec1);
                     </div>
                     <div class="hobbies_contianer">
                         <input
+                        class="blue-text"
                             id="hobby_input"
                             type="text"
                             name="skills"
                             placeholder="PLEASE ADD HOBBIES"
 
-                            /><button type="button" id="add_hobby" onclick="addSkill1()">
+                            /><button class="waves-effect" type="button" id="add_hobby" onclick="addSkill1()">
                             ADD HOBBY
                         </button>
 
-                        <button type="button" id="remove_hobby" onclick="removeSkill1()">
+                        <button class="waves-effect" type="button" id="remove_hobby" onclick="removeSkill1()">
                             REMOVE HOBBY
                         </button>
                         <textarea id="hobbies" name="hobbies" aria-valuetext="returna1()"  readonly cols="50" rows="10"   required="true" ></textarea>

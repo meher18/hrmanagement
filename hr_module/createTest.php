@@ -26,6 +26,25 @@ else if(isset ($_POST['on']))
     <head>
         <title>Create test </title>
         <link href="createTestcss.css" rel="stylesheet">
+
+
+
+ <!-- for the material css -->
+
+        <!-- Compiled and minified CSS -->
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+
+        <!-- Compiled and minified JavaScript -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+
+
+
+        <!-- for the material icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+
            <script type="text/javascript">
     if (window.performance && window.performance.navigation.type == window.performance.navigation.TYPE_BACK_FORWARD) {
         location.reload();
@@ -76,7 +95,7 @@ else if(isset ($_POST['on']))
 
     </head>
     <body>
-        <form action="createTest.php" method="POST" >
+        <form class="card" action="createTest.php" method="POST" >
             <input type="text" name="question"  placeholder="question" required="true"> 
             <br>
             <input type="radio" name="answer" id="radio1" required="true"><input type="text" name="answer1" placeholder="answer1" id="1" required="true"> 
@@ -90,7 +109,7 @@ else if(isset ($_POST['on']))
             <br>
             <input type="text" name="answer5" style="visibility: hidden" id="5" required="true"> 
             <br>
-            <button type="submit" name="on" value="on" onclick="check()" >    Submit
+            <button class="btn" type="submit" name="on" value="on" onclick="check()" > <i class="material-icons">save</i>   Submit
             </button>
 
         </form>
@@ -161,7 +180,7 @@ else if(isset ($_POST['on']))
             </div>
             <form action="createTest.php" method="POST">
 
-               To delete this double click : <button onclick="namechange(this.id)" class="button"  name="button"  type="submit"><?php echo $row['questionid'] ?></button>
+               To delete this double click : <button onclick="namechange(this.id)" class="button btn red"  name="button"  type="submit"><?php echo $row['questionid'] ?></button>
 
 
             </form>

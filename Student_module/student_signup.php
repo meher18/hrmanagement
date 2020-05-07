@@ -8,6 +8,22 @@
             Student Sign Up Page
         </title>
         <link href="student_signup.css" rel="stylesheet">
+        <script src="../js/jquery.js" >
+        
+        
+        
+        </script>
+        
+           
+<!--         for the material css -->
+
+<!--         Compiled and minified CSS -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+         <!--for the material icons-->
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--         Compiled and minified JavaScript -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+
         <script>
             function validate()
             {
@@ -22,6 +38,11 @@
                 }
 
             }
+
+
+            $(document).ready(function(){
+                $('.datepicker').datepicker();
+            })
         </script>
 
     </head>
@@ -30,14 +51,15 @@
 
         <div class="form" >
             <form  action="student_signup.php" method="POST" >
-                <input type="text" class="firstname" placeholder="PLEASE ENTER YOUR FIRST NAME" name="firstname">
-                <input type="text" class="lastname" placeholder="PLEASE ENTER YOUR LAST NAME" name="lastname">
+                <h3>HELLO YOU CAN REGISTER HERE</h3>
+                <input type="text" class="firstname center" placeholder="PLEASE ENTER YOUR FIRST NAME" name="firstname">
+                <input type="text" class="lastname center" placeholder="PLEASE ENTER YOUR LAST NAME" name="lastname">
                 <h4>Select your gender :</h4>
                 <div style="display: flex;align-content: center;justify-content: space-around;align-items: center;flex-direction: row">
-                    <input type="radio" name="gender" value="male" class="radio">MALE 
-                <input type="radio" name="gender" value="female" class="radio">FEMALE
+                  <p><label > <input  type="radio" name="gender" value="male" class="radio"><span>MALE</span></label></p>
+               <p><label > <input  type="radio" name="gender" value="female" class="radio"><span>FEMALE</span></label></p>
                 </div>
-                <input type="date" class="date" placeholder="PLEASE ENTER YOUR D.O.B" name="date">
+                <input type="text" class="datepicker " placeholder="PLEASE ENTER YOUR D.O.B" name="date">
                 <input type="text" class="coll_name" placeholder="ENTER YOUR COLLEGE NAME " name="coll_name" >
                 <input type="email" class="email" placeholder="PLEASE ENTER YOUR EMAIL ID" name="email">
                 <input type="password" class="password" placeholder="PLEASE ENTER YOUR PASSWORD" name="password" id="pass1">
@@ -47,7 +69,7 @@
 
 
 
-                <button class="btn fourth"  name="sign_up" value="on">Sign  up</button>
+                <button class="btn fourth "  name="sign_up" value="on">Sign  up</button>
 
 
             </form>
@@ -80,4 +102,8 @@
 
 
     </body>
+
+    <script>
+    
+    </script>
 </html>

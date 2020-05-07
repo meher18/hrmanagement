@@ -1,6 +1,20 @@
 <html>
     <head>
         <link href="viewjobcss.css" rel="stylesheet">
+
+        <!-- for the material css -->
+
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+
+        <!-- for the material icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     </head>
     <script>
         function  namechange(id)
@@ -11,7 +25,7 @@
         }
 
     </script>
-    <body>
+    <body >
         <?php
         session_start();
         $connect = mysqli_connect("localhost", "root", "", "admin")or die(mysqli_error($connect));
@@ -19,7 +33,7 @@
         $query = "select * from jobs ";
         $exec = mysqli_query($connect, $query) or die(mysqli_error($connect));
         ?> 
-        <div style="text-align: center" class="heading"> <h1><?php echo " this are the added jobs ..."; ?></h1>
+        <div style="text-align: center" class="heading"> <h4><?php echo " this are the added jobs ..."; ?></h4>
         </div>
 
 
@@ -33,13 +47,13 @@
                     <div class="job">
    <h4 >JOB ID :<?php echo $row[0]; ?></h4></br>
 
-                        <h1 class="company">COMPANY :<?php echo $row[2]; ?></h1></br>
-                        <h2 class="jobname">JOB NAME :<?php echo $row[1]; ?></h2></br>
-                        <h3 class="location">LOCATION :<?php echo $row[3]; ?></h3</br>
-                        <h4 class="jobdetails">JOB details :<?php echo $row[4]; ?></h4></br>
-                        <h4 class="skills">SKILLS :<?php echo $row[5]; ?></h4></br>
-                        <h4 class="experience"> EXPERIENCE :<?php echo $row[6]; ?></h4></br>
-                        <h4 class="salary">SALARY :<?php echo $row[7]; ?></h4></br>
+                        <h5 class="company">COMPANY :<?php echo $row[2]; ?></h1></br>
+                        <h6 class="jobname">JOB NAME :<?php echo $row[1]; ?></h2></br>
+                        <h6 class="location">LOCATION :<?php echo $row[3]; ?></h3</br>
+                        <h6 class="jobdetails">JOB details :<?php echo $row[4]; ?></h4></br>
+                        <h6 class="skills">SKILLS :<?php echo $row[5]; ?></h4></br>
+                        <h6 class="experience"> EXPERIENCE :<?php echo $row[6]; ?></h4></br>
+                        <h6 class="salary">SALARY :<?php echo $row[7]; ?></h4></br>
                     </div>
 
                     <!--                    <form action ="createTest.php" >

@@ -13,9 +13,9 @@
 }
 .hr{
      padding: 0px 40px;
-    border:2px solid black;
+    border: 1px  solid #333;
     height:80vh;
-    width:50vh;
+    width:70vh;
     overflow: auto;
     display: flex;
     flex-direction: column;
@@ -24,5 +24,5 @@
     align-items:center;
 }
 .hr-container button{
-    margin-left:40%;
+    
 }

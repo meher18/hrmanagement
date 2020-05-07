@@ -5,16 +5,26 @@
             student Login Page 
         </title>
         <link href="stu_login.css" rel="stylesheet">
+<!--         for the material css -->
+
+<!--         Compiled and minified CSS -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+         <!--for the material icons-->
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--         Compiled and minified JavaScript -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
     </head>
     <body>
-    <?php
-session_start();
-if (isset($_SESSION['firstname'])) {
-    header("location: ../index.php");
-}
-
-
-?>
+        
+        <?php 
+        if(isset($_SESSION['firstname']))
+        { 
+           
+            header("location: ../index.php");
+        }
+        
+        ?>
+    
         <!-- <nav class="navbar">
            <div class="links">
                <ul>
@@ -27,13 +37,13 @@ if (isset($_SESSION['firstname'])) {
 
            </div>
         </nav> -->
-        <div class="form" >
+        <div class="form " >
             <form action="student_login.php" method="POST">
-                <h2 style="font-family: sans-serif">STUDENT LOGIN HERE</h2>
+                <h3 style="font-family: sans-serif">STUDENT LOGIN HERE</h3>
 
-                <input type="text" class="first_name" placeholder="ENTER USER FIRST NAME PLEASE " name="firstname" required="true">
-                <input type="password" class="password" placeholder="ENTER PASSWORD PLEASE" name="password" required="true">
-                <button class="btn fourth"  type="submit" value="on" name="on" >Login</button>
+                <input type="text" class="first_name blue-text " placeholder="ENTER USER FIRST NAME PLEASE " name="firstname" required="true">
+                <input type="password" class="password blue-text" placeholder="ENTER PASSWORD PLEASE" name="password" required="true">
+                <button class="btn fourth waves-effect"  type="submit" value="on" name="on" >Login</button>
 
                 <div>
                     <h4>or sign up here > > <a href="student_signup.php" class="signuplink"> SIGN UP</a></h4>
@@ -43,7 +53,7 @@ if (isset($_SESSION['firstname'])) {
                 if (isset($_POST['on'])) {
                     validate();
                 }
-
+              
                 function validate() {
 
 
@@ -63,7 +73,7 @@ if (isset($_SESSION['firstname'])) {
 
                 function valid($name) {
                     echo "valid";
-                       session_start();
+                    session_start();
                     $_SESSION['firstname'] = $name;
                     header("location: student_module.php?firstname=$name");
                  

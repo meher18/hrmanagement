@@ -5,6 +5,16 @@
             Admin Login Page 
         </title>
         <link href="admin_loginStyle.css" rel="stylesheet">
+        
+         <link href="stu_login.css" rel="stylesheet">
+<!--         for the material css -->
+
+<!--         Compiled and minified CSS -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+         <!--for the material icons-->
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--         Compiled and minified JavaScript -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
     </head>
     <body>
 
@@ -20,13 +30,13 @@
 
            </div>
         </nav> -->
-        <div class="form" >
-            <form action="admin_login.php" method="POST">
+        <div class="form " >
+            <form  action="admin_login.php" method="POST">
                 <h2 style="font-family: sans-serif">ADMIN LOGIN HERE</h2>
                   
                 <input type="text" class="user_name" placeholder="ENTER USER NAME PLEASE " name="username" required="true">
                 <input type="password" class="password" placeholder="ENTER PASSWORD PLEASE" name="password" required="true">
-                <button class="btn fourth"  type="submit" value="on" name="on" >Login</button>
+                <button class="btn fourth waves-effect"  type="submit" value="on" name="on" >Login</button>
 
                 <div>
                     <h4>or sign up here > > <a href="admin_signup.php" class="signuplink"> SIGN UP</a></h4>

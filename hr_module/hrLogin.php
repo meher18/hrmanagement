@@ -8,6 +8,14 @@
         </title>
         
         <link href="HR_loginStyle.css" rel="stylesheet">
+        <!--         for the material css -->
+
+<!--         Compiled and minified CSS -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+         <!--for the material icons-->
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--         Compiled and minified JavaScript -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
     </head>
     <body>
 
@@ -18,7 +26,7 @@
                 <h2 style="font-family: sans-serif">HR LOGIN HERE</h2>
                 <input type="text" class="user_name" placeholder="ENTER YOUR NAME PLEASE " name="hr_name" required="true">
                 <input type="password" class="password" placeholder="ENTER PASSWORD PLEASE" name="password" required="true">
-                <button class="btn fourth"  type="submit" value="on" name="on" >Login</button>
+                <button class="btn fourth waves-effect"  type="submit" value="on" name="on" >Login</button>
  <?php
         if (isset($_POST['on'])) {
             validate();

@@ -4,6 +4,7 @@
 session_start();
 if( !isset( $_SESSION['firstname']))
 {
+    
     header("location: ../index.php");
 }
 
@@ -17,6 +18,12 @@ $_SESSION['testid1'] = 0;
         <title>
             Student module
         </title>
+        
+        
+        
+        
+        
+        
         <link href="https://fonts.googleapis.com/css?family=Abel|Cinzel|Kalam|Pacifico|Raleway|Satisfy|Shadows+Into+Light&display=swap" rel="stylesheet">
         <link href="viewjobs.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Italianno&display=swap" rel="stylesheet">
